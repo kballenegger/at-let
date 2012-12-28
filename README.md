@@ -20,6 +20,7 @@ Or install it yourself as:
 
 ```ruby
 let(hello: "world") { hello } # => "world"
+three = let(two: 2, one: 1) { one + two } # => 3
 ```
 
 ## Contributing
