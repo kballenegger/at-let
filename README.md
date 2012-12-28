@@ -19,8 +19,8 @@ Or install it yourself as:
 ## Usage
 
 ```ruby
-let(hello: "world") { hello } # => "world"
-three = let(two: 2, one: 1) { one + two } # => 3
+let {|hello = "world"| hello } # => "world"
+three = let {|two = 2, one = 1| one + two } # => 3
 ```
 
 ## Contributing
